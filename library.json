@@ -1,0 +1,23 @@
+{
+  "name": "Cerebro",
+  "description": "A library that makes use of Cerebro robot.",
+  "keywords": "cerebro,Cerebro,robot",
+  "authors": [
+      {
+          "name": "Aaron Miranda",
+          "url": "https://github.com/cerebro11101",
+          "maintainer": true
+      }
+  ],
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/cerebro11101/cerebro"
+  },
+  "version": "1.0.0",
+  "license": "MIT",
+  "homepage": "https://github.com/cerebro11101/cerebro/wiki",
+  "frameworks": "arduino",
+  "platforms": "*"
+}
+
+
