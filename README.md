@@ -1,9 +1,9 @@
 # CEREBRO 
-![Version](https://img.shields.io/badge/version-0.0.1-green?style=for-the-badge)
+![Version](https://img.shields.io/badge/version-0.0.1-magenta?style=for-the-badge)
 ![Build](http://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge)
-![Boards](https://img.shields.io/badge/boards-latest-blue?style=for-the-badge)
+![Boards](https://img.shields.io/badge/boards-Arduino_Uno-blue?style=for-the-badge)
 
-**Bienvenido**
+**Bienvenid@**
 
 Cerebro es un kit de robótica educativa que te enseña a programar mediante bloques o código sea cual sea tu elección.
 
@@ -50,4 +50,3 @@ Niños, Educadores, Ingenieros, Diseñadores, Inventores, Creadores ... En reali
 ¿Qué NO incluye Cerebro?
 
 Las ganas de aprender 😆 eso depende de ti, te aseguramos que con este kit serás un experto en programación y robótica 😈
-
