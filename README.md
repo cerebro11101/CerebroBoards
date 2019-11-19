@@ -1,6 +1,9 @@
 # CEREBRO 
+![Version](https://img.shields.io/badge/version-0.0.1-green?style=for-the-badge)
+![Build](http://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge)
+![Boards](https://img.shields.io/badge/boards-latest-blue?style=for-the-badge)
 
-¡Bienvenido!
+**Bienvenido**
 
 Cerebro es un kit de robótica educativa que te enseña a programar mediante bloques o código sea cual sea tu elección.
 
