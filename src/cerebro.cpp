@@ -203,17 +203,17 @@ void Cerebro::moveMotor(_motor Motor, motor_direction Direction, uint32_t time)
     {
         if (Direction == 1)
         { //FORWARD
-            PORTB = B00010001;
+            PORTB = B00010000;
             PORTC = B00000000;
         }
         else if (Direction == 2)
         { //BACKWARD
-            PORTB = B00000001;
+            PORTB = B00000000;
             PORTC = B00100000;
         }
         else
         { //STOP
-            PORTB = B00000001;
+            PORTB = B00000000;
             PORTC = B00000000;
         }
     }
@@ -221,17 +221,17 @@ void Cerebro::moveMotor(_motor Motor, motor_direction Direction, uint32_t time)
     {
         if (Direction == 1)
         { //FORWARD
-            PORTB = B00000001;
+            PORTB = B00000000;
             PORTC = B00001000;
         }
         else if (Direction == 2)
         { //BACKWARD
-            PORTB = B00000001;
+            PORTB = B00000000;
             PORTC = B00010000;
         }
         else
         { //STOP
-            PORTB = B00000001;
+            PORTB = B00000000;
             PORTC = B00000000;
         }
     }
@@ -249,11 +249,11 @@ void Cerebro::moveTank(motor_direction Direction,uint32_t time)
     switch (Direction)
     {
         case 1: // forward
-            PORTB = B00010001;
+            PORTB = B00010000;
             PORTC = B00001000;
             break;
         case 2: //backward
-            PORTB = B00000001;
+            PORTB = B00000000;
             PORTC = B00110000;
             break;
         case 3: //stop
@@ -261,11 +261,11 @@ void Cerebro::moveTank(motor_direction Direction,uint32_t time)
             PORTC = 0X00;
             break;
         case 4: //left
-            PORTB = B00010001;
+            PORTB = B00010000;
             PORTC = B00010000;
             break;
         case 5://right
-            PORTB = B00000001;
+            PORTB = B00000000;
             PORTC = B00101000;
             break;
             
@@ -301,11 +301,16 @@ uint16_t Cerebro::getDistance(){
      delayMicroseconds(10);
      PORTB = PORTB & B1111110;
      int tiempo = pulseIn(echo,1);
-     int distancia = tiempo / 58;
+     int distancia = tiempo / 2.0 * 0.0343;
      delayMicroseconds(50);
+     if (distancia <= 0 || distancia >= 400) {
+        return 0 ;
+    } else {
+
      Serial.print("DISTANCIA: ");
      Serial.println(distancia);
-     return distancia;
+        return distancia;
+    }
 
 }
 
