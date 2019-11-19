@@ -1,9 +1,22 @@
+/**
+ * @file cerebro.h
+ * @author Aarón Miranda (epsilon11101@gmail.com)
+ * @brief Libreria para el control del kit educativo CEREBRO
+ * @version 0.0.1
+ * @date 2019-11-18
+ * 
+ * @copyright Copyright (c) 2019
+ * 
+ */
 #ifndef Cerebro_h
 #define Cerebro_h
 
 #include <Arduino.h>
 #include <Servo.h>
-
+/**
+ * @brief enum piano_sound sonidos definidos para ser reproducidos
+ * 
+ */
 enum piano_sound{
   _B0  =31,
   _C1  =33,
@@ -95,7 +108,10 @@ enum piano_sound{
   _D8  =4699,
   _DS8 =4978
 };
-
+/**
+ * @brief rgb_color colores definidos para el facil uso del RGB
+ * 
+ */
 enum rgb_color{
     Red = 0xFF0000,
     Blue = 0x0000FF,
@@ -110,6 +126,10 @@ enum rgb_color{
     Magenta = 0xFF00FF,
     Raspberry = 0xFF007D
 };
+/**
+ * @brief motor_direction Direcciones definidas para el movimiento del robot
+ * 
+ */
 enum motor_direction{
     Forward = 1,
     Backward = 2,
@@ -118,12 +138,23 @@ enum motor_direction{
     Right = 5
     
 };
+/**
+ * @brief _motor Seleccion del motor 
+ * 
+ */
 enum _motor{
     M1 = 1,
     M2 = 2
 };
-
+/**
+ * @brief Definiciones de metodos
+ * 
+ */
 class Cerebro {
+    /**
+     * @brief Metodos públicos
+     * 
+     */
 public:
  
     Cerebro();
@@ -145,7 +176,10 @@ public:
     void moveMotor(_motor Motor, motor_direction Direction,uint32_t time);
     void moveTank(motor_direction Direction,uint32_t time);
     uint16_t getDistance();
-    
+ /**
+  * @brief Métodos y variables privad@s
+  * 
+  */
  
 private:
     #define buzzer 4
