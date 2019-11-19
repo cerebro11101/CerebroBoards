@@ -21,7 +21,7 @@ El kit incluye todo lo que necesita: Cerebro, cable USB. :computer:, unicamente 
 
 ¿Cómo funciona?
 
-Muy sencillo, si tienes experiencia en programación entra a este link: INTERMEDIO [!INTERMEDIO] (https://github.com/cerebro11101/cerebro/wiki/5.-COMO-INICIAR-CON-CEREBRO-(INTERMEDIO)), en caso de que nunca hallas programado te recomiendo entrar al siguiente link: NOOB [!NOOB] (https://github.com/cerebro11101/cerebro/wiki/2.-COMO-INICIAR-CON-CEREBRO-(NOOBS))
+Muy sencillo, si tienes experiencia en programación entra a este [link](https://github.com/cerebro11101/cerebro/wiki/5.-COMO-INICIAR-CON-CEREBRO-(INTERMEDIO)), en caso de que nunca hallas programado te recomiendo entrar al siguiente [link](https://github.com/cerebro11101/cerebro/wiki/2.-COMO-INICIAR-CON-CEREBRO-(NOOBS))
 
 ¿Para quién es Cerebro?
 
