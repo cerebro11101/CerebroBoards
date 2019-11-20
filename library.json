@@ -2,6 +2,10 @@
   "name": "Cerebro",
   "description": "A library that makes use of Cerebro robot.",
   "keywords": "cerebro,Cerebro,robot",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/cerebro11101/CerebroBoards"
+  },
   "authors": [
       {
           "name": "Aaron Miranda",
@@ -9,10 +13,7 @@
           "maintainer": true
       }
   ],
-  "repository": {
-      "type": "git",
-      "url": "https://github.com/cerebro11101/CerebroBoards"
-  },
+  
   "version": "1.0.0",
   "license": "MIT",
   "homepage": "https://github.com/cerebro11101/cerebro/wiki",
